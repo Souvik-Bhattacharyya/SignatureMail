@@ -40,7 +40,7 @@
         display: flex;
         align-items: center;
         position: relative;
-        width: 80vw;
+        width: 1200px;
       }
       .box-container .box::after {
         content: "";
@@ -73,7 +73,6 @@
         width: 50px;
         z-index: 100;
       }
-
       .box-container .box .image {
         text-align: center;
         padding: 60px 0;
@@ -109,57 +108,71 @@
         padding: 20px 10px;
         justify-content: center;
       }
-      .box-container .box .content .icons {
-        background: #fff;
-        margin: 0 10px;
-      }
-      .box-container .box .content .icons i {
-        background: #fff;
-        margin: 10px 13px;
-        color: coral;
-        display: block;
-        padding: 5px 0;
-      }
       .box-container .box .mid-sec{
         padding: 0 20px;
         margin: 0 20px;
         position: relative;
       }
       .box-container .box .title {
-        font-size: 25px;
+        font-size: 36px;
         font-weight: 700;
         color: #d00d1b;
         padding: 0;
-        text-transform: uppercase;
-        text-align: right;
+        text-transform: capitalize;
+        text-align: left;
+        margin-bottom: 0;
       }
+
       .post{
         font-size: 16px;
-        font-weight: 400;
-        color: #333;
-        padding:0;
+        font-weight: 500;
+        color: #15335E;
+        padding: 0;
         text-transform: uppercase;
-        text-align: right;
+        text-align: left;
       }
-      .box-container .box .content .info{
+      .box-container .box .content .info {
         display: flex;
         flex-direction: column;
         padding-top: 5px;
       }
-      .info a{
-        font-size: 16px;
+      .info a {
+        font-size: 14px;
         text-decoration: none;
-        padding-top: 10px;
+        padding-top: 14px;
+        color: #15335E !important;
+        display: flex;
       }
-      .box-container .box .last-section .flags img{
-        height: 40px;
-        width: 50px;
-        margin: 0 5px;
+
+      .info i{
+        height: 25px;
+        width: 25px;
+        background-color: #d00d1b;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff !important;
+        font-size: 12px;
       }
-      i,a{
+      .box-container .box .last-section .flags img {
+        height: 25px;
+        width: 35px;
+      }
+      .box-container .box .last-section .flags div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10px;
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      i,a {
         color: #d00d1b !important;
       }
-      .box-container .box .logo{
+      .box-container .box .logo {
         background: url(./assets/logo.png);
         background-size: contain;
         width: 20%;
@@ -172,13 +185,12 @@
         top: 0;
       }
 
-      .box-container .box .last-section{
+      .box-container .box .last-section {
         margin: 50px 0;
         position: relative;
         padding-left: 20px;
       }
-      .line
-      {
+      .line {
         height: 160px;
         background-color: #d00d1b;
         width: 5px;
@@ -189,11 +201,11 @@
         transform: translateY(-50%);
       }
 
-      .share{
+      .share {
         display: flex;
         justify-content: flex-end;
       }
-      .share a{
+      .share a {
         text-decoration: none;
         font-size: 20px;
         height: 30px;
@@ -206,17 +218,23 @@
         justify-content: center;
         align-items: center;
       }
-      .box-container .box .last-section .details{
+      .box-container .box .last-section .details {
         margin: 20px 0;
       }
-      .box-container .box .last-section .details h5{
+      .box-container .box .last-section .details h5 {
         font-size: 14px !important;
         font-weight: bold;
         text-decoration: underline !important;
         margin-top: 30px;
       }
-      .box-container .box .last-section .details .texts h6{
+      .box-container .box .last-section .details .texts h6 {
         font-size: 12px !important;
+        color: #333 !important;
+      }
+      .box-container .box .last-section .details .texts a {
+        font-size: 12px !important;
+        color: #333 !important;
+        text-decoration: none;
       }
     </style>
   </head>
@@ -239,18 +257,13 @@
             </div>
 
             <div class="content">
-              <div class="icons">
-                <i class="fas fa-phone"></i>
-                <i class="fas fa-globe"></i>
-                <i class="fas fa-envelope"></i>
-                <i class="fas fa-map-marker"></i>
-              </div>
-
               <div class="info">
-                <a href="#">+1-888-994-0810/+1-408-608-1253</a>
-                <a href="www.anglobalfranchise.com">www.anglobalfranchise.com</a>
-                <a mailTo="avinash@anglobal.us">avinash@anglobal.us</a>
-                <a>12005 Ford Road, Suite 100-A, Dallas TX-75234</a>
+                <a href="#"><i class="fas fa-phone me-2"></i> +1-888-994-0810 / +1-408-608-1253</a>
+                <a style="padding-top: 10px;" href="www.anglobalfranchise.com"
+                  ><i class="fas fa-globe me-2"></i> www.anglobalfranchise.com</a
+                >
+                <a mailTo="avinash@anglobal.us"><i class="fas fa-envelope me-2"></i> avinash@anglobal.us</a>
+                <a><i class="fa-solid fa-location-dot me-2"></i> 12005 Ford Road, Suite 100-A, Dallas TX-75234</a>
               </div>
             </div>
             <div class="share">
@@ -278,7 +291,7 @@
                 </h6>
                 <h6>
                   <b>Corporate Franchisee</b> -
-                  <a href="www.anglobalfranchise.com">www.anglobal.us</a>
+                  <a href="www.anglobal.us">www.anglobal.us</a>
                 </h6>
                 <h6>
                   <b>Technology & Marketing</b> -
@@ -288,7 +301,7 @@
                 </h6>
                 <h6>
                   <b>Training & Workshop</b> -
-                  <a href="www.anglobaltraining.com"
+                  <a href="www.anglobaletraining.com"
                     >www.anglobaltraining.com</a
                   >
                 </h6>
@@ -297,13 +310,28 @@
                   <a href="www.americaneb5e2L1.com">www.americaneb5e2L1.com</a>
                 </h6>
               </div>
-              <h5>Our Office</h5>
-              <div class="flags" style="width: 100%">
-                <img src="./assets/united-states.png" alt="" />
-                <img src="./assets/canada.png" alt="" />
-                <img src="./assets/india.png" alt="" />
-                <img src="./assets/australia.png" alt="" />
-                <img src="./assets/united-arab-emirates.png" alt="" />
+              <h5>OUR OFFICES</h5>
+              <div class="flags" style="width: 100%; display: flex;">
+                <div>
+                  <img src="./assets/us.png" alt="" />
+                  <a>USA</a>
+                </div>
+                <div>
+                  <img src="./assets/ca.png" alt="" />
+                  <a>CANADA</a>
+                </div>
+                <div>
+                  <img src="./assets/au.png" alt="" />
+                  <a>AUSTRALIA</a>
+                </div>
+                <div>
+                  <img src="./assets/in.png" alt="" />
+                  <a>INDIA</a>
+                </div>
+                <div>
+                  <img src="./assets/ae.png" alt="" />
+                  <a>DUBAI</a>
+                </div>
               </div>
             </div>
           </div>
